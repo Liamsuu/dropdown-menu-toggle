@@ -11,6 +11,14 @@
     "build": "webpack",
     "start": "webpack serve --open"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Liamsuu/dropdown-menu-toggle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Liamsuu/dropdown-menu-toggle/issues"
+  },
+  "homepage": "https://github.com/Liamsuu/dropdown-menu-toggle",
   "keywords": [],
   "author": "Liam Colley",
   "license": "ISC",
