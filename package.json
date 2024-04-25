@@ -1,15 +1,18 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "toggle-dropdown-list",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Easily create required CSS on hoverable element to toggle dropdown items visibility.",
+  "main": "./dist/toggle-dropdown.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack serve --open"
   },
   "keywords": [],
-  "author": "",
+  "author": "Liam Colley",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^7.1.1",
