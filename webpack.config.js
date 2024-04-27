@@ -1,18 +1,29 @@
 const path = require("path");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   mode: "production",
-  devtool: "source-map",
 
   entry: "./src/index.js",
+
+  experiments: {
+    outputModule: true,
+  },
   output: {
     filename: "toggle-dropdown.js",
     path: path.resolve(__dirname, "dist"),
-    clean: true,
-    globalObject: "this",
     library: {
-      name: "Dropdown",
-      type: "umd",
+      type: "module",
     },
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          keep_fnames: true, // keep function names
+        },
+      }),
+    ],
   },
 };

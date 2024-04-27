@@ -1,24 +1,32 @@
 # Dropdown-Menu-Toggler
 
-Steps to take:
+Install with npm:
 
-- Install dependencies: **npm install**
+```bash
+npm install toggle-dropdown-list
+```
 
-To use:
+# How to use:
 
-- Create hoverable element structure:
+- Create hoverable element structure in **HTML**:
 
 ```html
 <div>
-<button>Hover Over Me</button>
-<ul>
-  <li><a href="#">Link One</a></li>
-  <li><a href="#">Link Two</a></li>
-  <li><a href="#">Link Three</a></li>
-</ul>
+  <button>Hover Over Me</button>
+  <ul>
+    <li><a href="#">Link One</a></li>
+    <li><a href="#">Link Two</a></li>
+    <li><a href="#">Link Three</a></li>
+  </ul>
 </div>
 ```
 
-- Select the button element in your Javascript file to make the list items under it appear on hover of button.
-  
-- Style as needed.
+Javascript:
+
+```javascript
+// Supports ES6 module syntax
+import toggleDropdown from "toggle-dropdown-list";
+
+const button = document.querySelector("button");
+toggleDropdown(button);
+```
